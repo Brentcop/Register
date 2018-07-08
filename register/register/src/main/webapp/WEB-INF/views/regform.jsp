@@ -2,13 +2,37 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Register Here</title>
 </head>
+<style>
+body{
+height: 850px;
+background:#ace0ff;
+background: linear-gradient(to bottom right,#8080ff,#4db8ff,#ace0ff);
+font-family: 'Montserrat';font-size: 22px;}
+h1 {text-align: center;}
+h2 {text-align: center;}
+.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family : inherit;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1 {font-size: 12px;}
+.button1 {border-radius: 8px;}
+</style>
 <body>
-<h1>Welcome to the </h1> <h1> register page</h1>
+<h1>Welcome to the <br> <img src=<%=request.getContextPath() %>images/hwt.jpg width="145px" height="145px"> <br> register page</h1>
 <br>
 <h2>Please register bellow</h2>
 <br>
@@ -19,7 +43,7 @@
 <form id="register" action="confirm" method="post">
 		Input info<br>
 		<label for="first">First Name</label> <input type="text"
-			name="first" placeholder="First Name" required></input><br> 
+			name="first" placeholder="First Name" required autofocus></input><br> 
 		<label for="last">Last Name</label> <input type="text"
 			name="last" placeholder="Last Name" required></input> <br> 
 		<label for="address1">Address</label> <input type="text"
